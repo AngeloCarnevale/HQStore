@@ -3,7 +3,7 @@
 :root {
     --bg-color: #1f2222;
     --color: #fff;
-    --black-bg: #000;
+    --black-bg: rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -34,12 +34,23 @@ a {
 .link-produtos {
     padding-left: 200px;
 }
+.shopping-cart {
+    width: 30px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 40%;
+}
 .nav--index {
     padding: 45px;
+    display: flex;
+    justify-content: space-between;
 }
 section {
     display: flex;
     justify-content: center;
+}
+.lancamentos {
+    margin: 25px 0px 0px 20px;
 }
 .c-carousel {
     margin-top: 30px;
@@ -49,7 +60,7 @@ section {
 .c-carousel_slide {
     color: #c0c0c0;
     display: flex;
-    padding: 10px;
+    padding: 0px 0px 0px 10px;
 }
 #productsList {
     max-width: 800px;
@@ -71,7 +82,9 @@ section {
 }
 .textoProduto {
     padding: 10px;
-    
+}
+.preco {
+    padding-top: 10px;
 }
 .info-produto img {
     width: 300px;
@@ -91,15 +104,34 @@ section {
     background-color: #000;
     border-radius: 50px;
 }
+#cartProducts{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.produto-carrinho{
+    display: flex;
+    padding: 10px;
+}
+.produto-carrinho img {
+    width: 100px;
+    padding: 0px 50px 0px 50px;
+}
+.quantidade {
+    padding: 10px;
+}
 footer {
     height: 100px;
-    background-color: var(--black-bg);
+    background-color: var(--black-bg    );
     bottom: 0;
     display: flex;
     justify-content: center;
 }
 h6 {
-    background-color: var(--black-bg);
     padding-top: 45px;
     font-size: 0.8em;
 }
