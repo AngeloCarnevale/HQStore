@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filtro de Produtos</title>
+</head>
+<body>
+  <h1>Filtro de Produtos</h1>
+
+  <div>
+    <label for="category">Categoria:</label>
+    <select id="category">
+      <option value="">Todas</option>
+      <option value="eletronicos">Eletrônicos</option>
+      <option value="vestuario">Vestuário</option>
+      <option value="acessorios">Acessórios</option>
+    </select>
+  </div>
+
+  <div>
+    <input type="number" id="maxPrice" min="0">
+  </div>
+
+  <button onclick="filterProducts()">Filtrar</button>
+
+  <div id="products">
+    <!-- Lista de produtos será exibida aqui -->
+  </div>
+
+  <script>
+    // Dados fictícios de produtos
+    const products = [
+      { nome: "Smartphone", categoria: "eletronicos", preco: 1500 },
+      { nome: "Camiseta", categoria: "vestuario", preco: 30 },
+      { nome: "Fone de ouvido", categoria: "eletronicos", preco: 100 },
+      { nome: "Relógio", categoria: "acessorios", preco: 200 },
+      { nome: "Tênis", categoria: "vestuario", preco: 80 }
+    ];
+
+    // Função para filtrar os produtos
+    function filterProducts() {
+      const category = document.getElementById("category").value;
+      const maxPrice = document.getElementById("maxPrice").value;
+
+      // Filtrar os produtos de acordo com a categoria e preço máximo selecionados
+      const filteredProducts = products.filter(product => {
+        if (category && category !== product.categoria) {
+          return false;
+        }
+
+        if (maxPrice && product.preco > maxPrice) {
+          return false;
+        }
+
+        return true;
+      });
+
+      // Limpar a lista de produtos
+      const productList = document.getElementById("products");
+      productList.innerHTML = "";
+
+      // Exibir os produtos filtrados
+      filteredProducts.forEach(product => {
+        const item = document.createElement("div");
+        item.textContent = `${product.nome} - ${product.categoria} - R$ ${product.preco.toFixed(2)}`;
+        productList.appendChild(item);
+      });
+    }
+  </script>
+</body>
+</html>
