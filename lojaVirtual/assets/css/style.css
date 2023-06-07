@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap');
 
 :root {
     --bg-color: #1f2222;
     --color: #fff;
-    --black-bg: rgba(0, 0, 0, 0.6);
+    --black-bg: rgba(0, 0, 0, 1);
 }
 
 * {
@@ -12,9 +13,8 @@
     text-decoration: none;
     font-family: Arial, Arial, Helvetica, sans-serif;
 }
-
 body {
-    background-color: var(--bg-color);
+    background-color: var(--color);
     color: var(--color);
 }
 main {
@@ -23,13 +23,27 @@ main {
 a {
     color: var(--color);
 }
-.header--index {
-    height: 150px;
-    background-color: var(--black-bg);
+.carousel-inner {
+    background-image: url("https://i.pinimg.com/736x/97/74/57/977457b721a68d280eadfcb1b8d2765a.jpg");
 }
-.logo {
-    font-family: 'Lilita One', cursive;
-    font-size: 2.5em;
+.row{
+    margin-top: 40px;
+}
+.nav-pills {
+    margin-right: 100px;
+}
+.fs-4 {
+    font-family: 'Pacifico', cursive;;
+}
+.col-lg-4 {
+    text-align: center;
+    color: #000;
+}
+.hq-row {
+    width: 200px;
+}
+.header-img {
+    width: 100%;
 }
 .link-produtos {
     padding-left: 200px;
@@ -40,27 +54,8 @@ a {
     background-color: #fff;
     border-radius: 40%;
 }
-.nav--index {
-    padding: 45px;
-    display: flex;
-    justify-content: space-between;
-}
-section {
-    display: flex;
-    justify-content: center;
-}
 .lancamentos {
     margin: 25px 0px 0px 20px;
-}
-.c-carousel {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.c-carousel_slide {
-    color: #c0c0c0;
-    display: flex;
-    padding: 0px 0px 0px 10px;
 }
 #productsList {
     max-width: 800px;
@@ -126,10 +121,10 @@ section {
 }
 footer {
     height: 100px;
-    background-color: var(--black-bg    );
+    background-color: var(--black-bg);
     bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 h6 {
     padding-top: 45px;
