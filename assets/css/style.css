@@ -157,15 +157,6 @@ hr{
 .botao-adicionar:hover{
     background-color: #e6bb00;
 }
-#cartProducts{
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 10px;
-}
 .produto-carrinho{
     display: flex;
     padding: 10px;
@@ -187,6 +178,7 @@ footer {
     color: var(--black);
     text-decoration: none;
     padding-left: 10px;
+    width: 150px;
 }
 
 .imagem-produto-carrinho { 
@@ -199,12 +191,10 @@ footer {
 #produtos-carrinho {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    justify-content: center;
+    width: 500px;
     border-radius: 10px;
     border: 1px solid rgb(211, 211, 211);
 }
-
 .total {
     text-align: center;
 }
@@ -214,7 +204,15 @@ footer {
 }
 #botao-finalizar {
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: var(--yellow);
     padding: 15px;
     border-radius: 50px;
+}
+.btn-remove-cart {
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.lixeira-img {
+    width: 35px;
 }

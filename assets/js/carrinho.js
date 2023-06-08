@@ -23,19 +23,28 @@ else{
     `
 }
 
+removerProduto = () => {
+    produtos.map((val)=>{
+        
+    })
+    
+}
 
 paginaCarrinho = () => {
     produtos.map((val)=>{
         let valorTotal = val.preco * val.quantidade
         carrinho.innerHTML += `
     <div class="produto-carrinho">
-        <img class="imagem-produto-carrinho" src="`+val.img+`"/>
+        <img class="imagem-produto-carrinho" src="`+val.img+`" alt="Imagem do produto que está no carrinho"/>
         <div class="info-produto-carrinho">
             <p class="textoProduto" >Título: `+val.nome+`</p>
             <p class="preco-carrinho">Preço: R$`+valorTotal+`,00</p>
             <p class="quantidade">Quantidade: `+val.quantidade+`</p>
         </div>
+        
+    <a class="btn-remove-cart" onclick="removerProduto()" href="#"><img class="lixeira-img" src="../assets/img/lixeira.png"></a>
     </div>
+
     `
     total.push(valorTotal)
     })
