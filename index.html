@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/hq-favicon.jpg">
+    <title>HQ Store</title>
+</head>
+<body>
+  <header class="d-flex flex-wrap justify-content-center py-3">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"></svg>
+      <span class="fs-4">HQ Store</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link " aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="./views/allProducts.html" class="nav-link">HQ's</a></li>
+      <li class="nav-item"><a href="./views/sobreNos.html" class="nav-link">Sobre nós</a></li>
+      <li class="nav-item"><a href="./views/carrinho.html" class="nav-link">Carrinho</a></li>
+    </ul>
+  </header>
+
+    <main>
+      <section class="carousel-section">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <div class="container">
+                
+                <div class="carousel-caption text-start">
+                  <h1>Novas HQ's toda semana.</h1>
+                  <p class="opacity-75">Se inscreva para receber nossas atualizações e acompanhe a coleção dos heróis favoritos!</p>
+                  <p><a class="btn btn-lg btn-warning" href="#">Faça login</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Sobre nós</h1>
+                  <p class="opacity-75">Clique aqui para conhecer um pouco mais da nossa história!</p>
+                  <p><a class="btn btn-lg btn-warning" href="./views/sobreNos.html">Leia mais</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Fale conosco</h1>
+                  <p class="opacity-75">Envie uma mensagem para que possamos melhorar nosso atendimento e esclarecer dúvidas.</p>
+                  <p><a class="btn btn-lg btn-warning" href="./views/faleConosco.html">Clique aqui</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2>Lançamentos</h2>
+        <div class="row">
+          <div class="col-lg-4">
+           <img class="hq-row" src="./assets/img/batman.jpg" alt="">
+            <h2 class="fw-normal">Batman Nº 1</h2>
+            <p>Venha acompanhar mais uma história empolgante do homem morcego, nesta nova primeira edição de lançamento.</p>
+            <p><a class="btn btn-warning" href="./views/product.html">Ver detalhes</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="hq-row" src="./assets/img/o-homem-aranha.jpg" alt="">
+            <h2 class="fw-normal">O Homem Aranha</h2>
+            <p>O amigo da vizinhança chega mais uma vez com essa história super empolgante na missão especial com o uniforme negro</p>
+            <p><a class="btn btn-warning" href="./views/product.html">Ver detalhes</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="hq-row" src="./assets/img/o-incrivel-hulk.jpg" alt="">
+            <h2 class="fw-normal">The incredible Hulk</h2>
+            <p>Edição especial americana, importada dos EUA, trazendo uma empolgante história do nosso grande amigo Hulk</p>
+            <p><a class="btn btn-warning" href="./views/product.html">Ver detalhes</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <footer>
+        <div class="footer-container">
+          <p class="copyrigth">© 2023 HQ Store, Inc. All rigths reserved</p>
+          <a href="./views/">Fale Conosco</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Política de Privacidade</a>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
