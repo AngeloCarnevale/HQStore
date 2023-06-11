@@ -13,24 +13,35 @@
 </head>
 
 <body>
-  <header class="d-flex flex-wrap justify-content-center py-3 ">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"></svg>
-      <span class="fs-4">HQ Store</span>
-    </a>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="../index.html" class="nav-link " aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="../views/product.html" class="nav-link">HQ's</a></li>
-      <li class="nav-item"><a href="../views/sobreNos.html" class="nav-link">Sobre nós</a></li>
-      <li class="nav-item"><a href="../views/carrinho.html" class="nav-link"><img class="image-cart"
-            src="../assets/img/shopping-cart.png" alt="Imagem do carinho de compras"></a></li>
-    </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">HQ Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/allProducts.html">HQ's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/sobreNos.html">Sobre nós</a>
+            </li>
+            <li class="nav-item"><a href="../views/carrinho.html" class="nav-link"><img class="image-cart"
+                  src="../assets/img/shopping-cart.png" alt="Imagem do carrinho de compras"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
+  <main id="main-faleconosco">
     <section class="container-contact-us">
-      <article id="content">
         <div id="mapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.981652264718!2d-47.07070118848572!3d-22.914047579163476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8c794884427%3A0x15a2759628f243d1!2sEscola%20e%20Faculdade%20de%20Tecnologia%20Senai%20%22Roberto%20Mange%22!5e0!3m2!1spt-BR!2sbr!4v1686450990302!5m2!1spt-BR!2sbr"
@@ -61,18 +72,18 @@
                 alt="Logo e-mail"></a>
           </div>
         </form>
-
-      </article>
-
     </section>
   </main>
 
   <footer>
     <div class="footer-container">
       <p id="copyrigth">© 2023 HQ Store, Inc. All rigths reserved</p>
-      <a class="footer-text" href="#">Fale Conosco</a>
-      <a class="footer-text" href="../views/termosDeUso.html">Termos de Uso</a>
-      <a class="footer-text" href="../views/politicaDePrivacidade.html">Política de Privacidade</a>
+      <div class="links-footer">
+        <a class="footer-text" href="#">Fale Conosco</a>
+        <a class="footer-text" href="../views/termosDeUso.html">Termos de Uso</a>
+        <a class="footer-text" href="../views/politicaDePrivacidade.html">Política de Privacidade</a>
+      </div>
+
     </div>
 
     </div>
@@ -81,6 +92,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-</body>
 
 </html>

@@ -4,10 +4,22 @@ var botao = document.getElementById('div-botao')
 var carrinho = document.getElementById('produtos-carrinho')
 
 finalizarCompra = () => {
-    localStorage.clear()
-    alert('Compra finalizada com sucesso')
-    location.reload()
-    return false
+    Swal.fire({
+        title: 'Deseja mesmo finalizar a compra?',
+        showDenyButton: true,
+        confirmButtonText: 'Sim',
+        denyButtonText: `Não`,
+    }).then((result) => {
+        if (result.isConfirmed) {
+            localStorage.clear()
+            Swal.fire(
+                'Compra finalizada!',
+                'Obrigad@ por comprar conosco',
+                'success'
+            )
+        }
+    })
+
 }
 
 if (produtos == null || produtos == '') {
@@ -63,4 +75,3 @@ paginaCarrinho = () => {
 }
 
 paginaCarrinho()
-

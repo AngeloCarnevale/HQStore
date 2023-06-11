@@ -4,6 +4,7 @@ var lista = new Array
 var carrinho = JSON.parse(localStorage.getItem('carrinho'))
 var produtoUnico = JSON.parse(localStorage.getItem('produto'))
 
+
 if (carrinho == null) {
     localStorage.setItem('carrinho', JSON.stringify(lista))
 }
@@ -34,7 +35,6 @@ exibirProduto()
 /* Função para validar e adicionar um item no carrinho */
 
 atualizarCarrinho = (id, nome, preco, img) => {
-
     var ids = []
     for (var i = 0; i < carrinho.length; i++) {
         ids.push(carrinho[i].id)
@@ -47,7 +47,6 @@ atualizarCarrinho = (id, nome, preco, img) => {
         quantidade: 1
     }
     if (carrinho == '') {
-
         carrinho.push(produto)
         localStorage.setItem('carrinho', JSON.stringify(carrinho))
     }
@@ -72,5 +71,10 @@ atualizarCarrinho = (id, nome, preco, img) => {
     }
     localStorage.setItem('carrinho', JSON.stringify(carrinho))
     localStorage.setItem('produto', JSON.stringify(produtoUnico))
-    alert('Produto adicionado com sucesso!')
-}  
+  
+    Swal.fire(
+    'Parabéns',
+    'Produto adicionado ao carrinho com sucesso',
+    'success'
+    )
+} 

@@ -13,33 +13,43 @@
     text-decoration: none;
     font-family: Arial, Arial, Helvetica, sans-serif;
 }
-
 body {
     background-color: var(--color);
+}
+a {
+    color: var(--color);
+    text-decoration: none;
 }
 
 main {
     min-height: 100vh;
 }
 
-a {
-    color: var(--color);
-    text-decoration: none;
-}
-
 .image-cart {
     width: 35px;
 }
-
+#navbarNav{
+    justify-content:right;
+    margin-right: 100px;
+}
+.navbar-brand{
+    margin-left: 50px;
+    font-size: 1.7em;
+}
 .carousel-inner {
     background-image: url("https://i.pinimg.com/736x/97/74/57/977457b721a68d280eadfcb1b8d2765a.jpg");
 }
+
 .container h2 {
     padding-top: 30px;
+}
+.navbar {
+    min-height: 80px;
 }
 .nav-link {
     display: flex;
 }
+
 .row {
     margin-top: 40px;
 }
@@ -65,7 +75,7 @@ a {
     color: var(--black);
 }
 
-.fs-4 {
+.navbar-brand {
     font-family: 'Pacifico';
 }
 
@@ -108,6 +118,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 hr {
@@ -119,7 +130,7 @@ hr {
     flex-direction: column;
     transition: linear 0.2s;
     text-align: center;
-    width: 230px;
+    width: 200px;
 }
 
 .preco-produto {
@@ -138,11 +149,13 @@ hr {
 .about-us {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 #infos-produto {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .info-produto {
@@ -152,9 +165,7 @@ hr {
 .nome-preco {
     padding-left: 50px;
     width: 600px;
-
 }
-
 .about-us-container {
     display: flex;
     flex-direction: column;
@@ -162,9 +173,8 @@ hr {
     width: 700px;
     color: var(--black);
     border: 1px solid #c0c0c0;
-    padding: 10px;
+    padding: 20px;
 }
-
 .about-us-container h2 {
     text-align: center;
 }
@@ -193,7 +203,7 @@ hr {
 }
 
 .botao-adicionar:hover {
-    background-color: #e6bb00;
+    background-color: #be9c00;
 }
 
 .produto-carrinho {
@@ -221,8 +231,9 @@ footer {
     color: #c0c0c0;
 }
 
-#copyrigth {
-    padding-top: 30px;
+#copyrigth, .links-footer{
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 /* CSS Carrinho de compras */
@@ -245,6 +256,7 @@ footer {
 
 #produtos-carrinho {
     display: flex;
+    margin-top: 30px;
     flex-direction: column;
     width: 500px;
     border-radius: 10px;
@@ -278,41 +290,46 @@ footer {
 }
 
 /* Estilo página fale conosco */
-
 .container-contact-us {
-    background-color: #f5f5f5;
-    height: 100vh;
+    background-color: white;
     display: flex;
     justify-content: center;
 }
 
-#content {
-    background-color: var(--white);
-    display: flex;
-    top: 20%;
-    position: absolute;
-}
 fieldset {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
+
 #legenda-contact-us {
     font-weight: bold;
     font-size: 2em;
 }
+
 #form-contact-us {
-    padding-top: 60px;
+    padding-top: 15px;
     padding-right: 60px;
+    margin-top: 80px;
+    height: 500px;
+    background-color: #fff;
 }
+
 #mapa {
-    padding: 60px;
+    margin-top: 80px;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-color: #fff;
 }
+
 iframe {
     width: 400px;
     height: 400px;
 }
+
 #redes-sociais {
     padding-top: 30px;
     margin-top: 40px;
@@ -320,16 +337,19 @@ iframe {
     justify-content: space-around;
     border-top: 1px solid black;
 }
+
 .social-icon {
     width: 35px;
 }
-#submit-contact-us{
+
+#submit-contact-us {
     margin-top: 30px;
     width: 100px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
 }
+
 #submit-contact-us:hover {
     background-color: black;
     color: white;
@@ -342,20 +362,33 @@ iframe {
     border: hidden;
     border-bottom: 1px solid black;
 }
-
+#privacidade-content, #termos-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#privacidade-text, #termos-text{
+    width: 800px;
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+    text-align: justify;
+}
 @media (min-width: 320px) and (max-width:480px) {
+
     .footer-container {
         flex-direction: column;
-        height: 180px;
+        text-align: center;
+        height: 130px;
     }
-
     .footer-text {
-        padding: 10px;
-        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
-    #copyright {
-        justify-content: center;
+    #copyrigth {
+        padding:0;
         margin: 0;
     }
 
@@ -363,7 +396,10 @@ iframe {
         display: flex;
         justify-content: center;
     }
-
+    .links-footer {
+        display: flex;
+        justify-content: center;
+    }
     .nome-preco {
         width: 250px;
         font-size: 0.8em;
@@ -378,14 +414,16 @@ iframe {
         font-size: 0.9em;
     }
 
-    .info-produto { 
+    .info-produto {
         text-align: center;
         flex-direction: column;
         align-items: center;
     }
+
     .info-produto img {
         text-align: center;
     }
+
     .nome-preco {
         padding: 0px;
         margin: 0px;
@@ -398,10 +436,48 @@ iframe {
     .descricao-produto {
         display: none;
     }
+
     #productsList {
         justify-content: center;
     }
+    .btn-remove-cart{
+        margin-left: 30px;
+    }
+    #produtos-carrinho{
+        border: hidden;
+    }
+    .produto-carrinho {
+        border-bottom: 1px solid rgb(211, 211, 211);
+    }
+    #content{
+        flex-direction: column;
+        width: 400px;   
+    }
+    #form-contact-us {
+        padding: 10px;
+    }
+    iframe {
+        width: 100%;
+        height: 350px;
+    }
+    .input-contact-us {
+        width: 80%;
+    }
+    #mapa {
+        padding:20px;
+        height: 300px;
+        margin-top: 30px;
+    }
+    .links-footer {
+        padding: 0;
+    }
+    .container-contact-us {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
 }
+
 @media (min-width: 481px) and (max-width:768px) {
     .footer-container {
         flex-direction: column;
@@ -437,14 +513,16 @@ iframe {
         font-size: 0.9em;
     }
 
-    .info-produto { 
+    .info-produto {
         text-align: center;
         flex-direction: column;
         align-items: center;
     }
+
     .info-produto img {
         text-align: center;
     }
+
     .nome-preco {
         padding: 0px;
         margin: 0px;
@@ -457,6 +535,7 @@ iframe {
     .descricao-produto {
         display: none;
     }
+
     #productsList {
         justify-content: center;
     }
