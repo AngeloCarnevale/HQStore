@@ -464,6 +464,7 @@ iframe {
         width: 80%;
     }
     #mapa {
+        width: 100%;
         padding:20px;
         height: 300px;
         margin-top: 30px;
