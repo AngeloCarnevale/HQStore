@@ -1,6 +1,6 @@
 lista = new Array
 var carrinho = JSON.parse(localStorage.getItem('carrinho'))
-if(carrinho == null){
+if (carrinho == null) {
     localStorage.setItem('carrinho', JSON.stringify(lista))
 }
 
@@ -105,17 +105,18 @@ const items = [
 
 var containerProdutos = document.getElementById('productsList')
 
+/* Carregar produtos da página */
+
 productsPage = () => {
-    items.map((val)=>{
+    items.map((val) => {
         containerProdutos.innerHTML += `
         
         <div class="produto">
-            <a class="productImage" key='`+val.id+`' href="/views/product.html"><img src='`+val.img+`'/></a>
-            <a class="textoProduto" key='`+val.id+`' href="/views/product.html">`+val.nome+`<p class="preco">R$`+val.preco+`,00</p></a>
-            
+            <a class="productImage" key='`+ val.id + `' href="/views/product.html"><img src='` + val.img + `'/></a>
+            <a class="textoProduto" key='`+ val.id + `' href="/views/product.html">` + val.nome + `<p class="preco">R$` + val.preco + `,00</p></a>
         </div>
         `
-        
+
     })
 }
 
@@ -123,19 +124,20 @@ productsPage()
 
 var links = document.getElementsByTagName('a')
 
-for(var i=0; i < links.length; i++){
-    links[i].addEventListener("click", function(){
+/* Pegando evento de click */
+
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
         let key = this.getAttribute('key')
         let produto = items[key]
-        console.log(produto)
         let produtoObj = {
             id: produto.id,
             nome: produto.nome,
             quantidade: produto.quantidade,
             preco: produto.preco,
             img: produto.img,
-            descricao: produto.descricao         
-         }
+            descricao: produto.descricao
+        }
         localStorage.setItem('produto', JSON.stringify(produtoObj))
     })
 }

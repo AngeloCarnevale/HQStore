@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/img/hq-favicon.jpg">
-    <title>HQ Store</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/assets/img/hq-favicon.jpg">
+  <title>HQ Store</title>
 </head>
+
 <body>
   <header class="d-flex flex-wrap justify-content-center py-3">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -20,96 +23,248 @@
       <li class="nav-item"><a href="#" class="nav-link " aria-current="page">Home</a></li>
       <li class="nav-item"><a href="./views/allProducts.html" class="nav-link">HQ's</a></li>
       <li class="nav-item"><a href="./views/sobreNos.html" class="nav-link">Sobre nós</a></li>
-      <li class="nav-item"><a href="./views/carrinho.html" class="nav-link">Carrinho</a></li>
+      <li class="nav-item"><a href="./views/carrinho.html" class="nav-link"><img class="image-cart"
+            src="./assets/img/shopping-cart.png" alt="Imagem carrinho de compras">
+
+        </a>
+
+      </li>
     </ul>
   </header>
 
-    <main>
-      <section class="carousel-section">
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                
-                <div class="carousel-caption text-start">
-                  <h1>Novas HQ's toda semana.</h1>
-                  <p class="opacity-75">Se inscreva para receber nossas atualizações e acompanhe a coleção dos heróis favoritos!</p>
-                  <p><a class="btn btn-lg btn-warning" href="#">Faça login</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Sobre nós</h1>
-                  <p class="opacity-75">Clique aqui para conhecer um pouco mais da nossa história!</p>
-                  <p><a class="btn btn-lg btn-warning" href="./views/sobreNos.html">Leia mais</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item active">
-              <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>Fale conosco</h1>
-                  <p class="opacity-75">Envie uma mensagem para que possamos melhorar nosso atendimento e esclarecer dúvidas.</p>
-                  <p><a class="btn btn-lg btn-warning" href="./views/faleConosco.html">Clique aqui</a></p>
-                </div>
+  <main>
+    <section class="carousel-section">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+            class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
+            aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <div class="container">
+
+              <div class="carousel-caption text-start">
+                <h1>Novas HQ's toda semana.</h1>
+                <p class="opacity-75">Se inscreva para receber nossas atualizações e acompanhe a coleção dos heróis
+                  favoritos!</p>
+                <p><a class="btn btn-lg btn-warning" href="#">Faça login</a></p>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-
-      <section class="container">
-        <h2>Lançamentos</h2>
-        <div class="row">
-          <div class="col-lg-4">
-           <img class="hq-row" src="./assets/img/batman.jpg" alt="">
-            <h2 class="fw-normal">Batman Nº 1</h2>
-            <p>Venha acompanhar mais uma história empolgante do homem morcego, nesta nova primeira edição de lançamento.</p>
-            <p><a class="btn btn-warning" href="./views/product.html">Ver detalhes</a></p>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Sobre nós</h1>
+                <p class="opacity-75">Clique aqui para conhecer um pouco mais da nossa história!</p>
+                <p><a class="btn btn-lg btn-warning" href="./views/sobreNos.html">Leia mais</a></p>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <img class="hq-row" src="./assets/img/o-homem-aranha.jpg" alt="">
-            <h2 class="fw-normal">O Homem Aranha</h2>
-            <p>O amigo da vizinhança chega mais uma vez com essa história super empolgante na missão especial com o uniforme negro</p>
-            <p><a class="btn btn-warning" href="./views/product.html">Ver detalhes</a></p>
-          </div>
-          <div class="col-lg-4">
-            <img class="hq-row" src="./assets/img/o-incrivel-hulk.jpg" alt="">
-            <h2 class="fw-normal">The incredible Hulk</h2>
-            <p>Edição especial americana, importada dos EUA, trazendo uma empolgante história do nosso grande amigo Hulk</p>
-            <p><a class="btn btn-warning" href="./views/product.html">Ver detalhes</a></p>
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Fale conosco</h1>
+                <p class="opacity-75">Envie uma mensagem para que possamos melhorar nosso atendimento e esclarecer
+                  dúvidas.</p>
+                <p><a class="btn btn-lg btn-warning" href="./views/faleConosco.html">Clique aqui</a></p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-      <footer>
-        <div class="footer-container">
-          <p class="copyrigth">© 2023 HQ Store, Inc. All rigths reserved</p>
-          <a href="./views/">Fale Conosco</a>
-          <a href="#">Termos de Uso</a>
-          <a href="#">Política de Privacidade</a>
+    <section class="container">
+      <h2>Lançamentos</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="hq-row" src="./assets/img/batman.jpg" alt="">
+          <h2 class="fw-normal">Batman Nº 1</h2>
+          <p>Venha acompanhar mais uma história empolgante do homem morcego, nesta nova primeira edição de lançamento.
+          </p>
+          <p><a class="btn btn-warning" key="0" href="./views/product.html">Ver detalhes</a></p>
         </div>
-      </footer>
+        <div class="col-lg-4">
+          <img class="hq-row" src="./assets/img/o-homem-aranha.jpg" alt="">
+          <h2 class="fw-normal">O Homem Aranha</h2>
+          <p>O amigo da vizinhança chega mais uma vez com essa história super empolgante na missão especial com o
+            uniforme negro</p>
+          <p><a class="btn btn-warning" key="3" href="./views/product.html">Ver detalhes</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="hq-row" src="./assets/img/o-incrivel-hulk.jpg" alt="">
+          <h2 class="fw-normal">The incredible Hulk</h2>
+          <p>Edição especial americana, importada dos EUA, trazendo uma empolgante história do nosso grande amigo Hulk
+          </p>
+          <p><a class="btn btn-warning" key="6" href="./views/product.html">Ver detalhes</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <footer>
+    <div class="footer-container">
+
+      <p id="copyrigth">© 2023 HQ Store, Inc. All rigths reserved</p>
+      <a class="footer-text" href="./views/faleConosco.html">Fale Conosco</a>
+      <a class="footer-text" href="./views/termosDeUso.html">Termos de Uso</a>
+      <a class="footer-text" href="./views/politicaDePrivacidade.html">Política de Privacidade</a>
+    </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script>
+    lista = new Array
+    var carrinho = JSON.parse(localStorage.getItem('carrinho'))
+    if (carrinho == null) {
+      localStorage.setItem('carrinho', JSON.stringify(lista))
+    }
+
+    const items = [
+      {
+        id: 0,
+        nome: 'Batman',
+        img: '/assets/img/batman.jpg',
+        preco: 7,
+        quantidade: 0,
+        descricao: 'Na cidade sombria de Gotham, mergulhada no caos e corrupção, um novo protetor surge das trevas. Nesta edição, testemunhamos a transformação do bilionário Bruce Wayne em um vigilante enigmático, conhecido como Batman. A narrativa começa com o brutal assassinato dos pais de Bruce quando ele ainda era uma criança, evento que moldou sua vida para sempre. Determinado a combater o crime que assola sua cidade, Bruce embarca em uma jornada intensa de treinamento físico, intelectual e emocional.'
+      },
+      {
+        id: 1,
+        nome: 'Almanaque Capitão América',
+        img: '/assets/img/capitao-america.jpg ',
+        preco: 14,
+        quantidade: 0,
+        descricao: 'No universo dos quadrinhos, o Almanaque Capitão América traz uma emocionante coletânea de histórias que celebram o legado do icônico herói patriota. Em suas páginas, somos transportados para os momentos mais emblemáticos da vida e das aventuras do Capitão América. Desde seu surgimento durante a Segunda Guerra Mundial, quando o jovem e corajoso Steve Rogers se voluntariou para um experimento que o transformou no supersoldado conhecido como Capitão América, até os dias atuais, onde ele lidera os Vingadores e defende o mundo contra as ameaças mais perigosas.'
+      },
+      {
+        id: 2,
+        nome: 'Heróis da TV',
+        img: '/assets/img/herois-da-tv.jpg',
+        preco: 10,
+        quantidade: 0,
+        descricao: '"Heróis da TV" é uma eletrizante história em quadrinhos que reúne os icônicos heróis da televisão em uma aventura épica. Nesse universo, os personagens que conquistaram os corações dos telespectadores ganham vida de forma ainda mais vibrante e se unem para enfrentar uma ameaça de proporções catastróficas. A trama se desenrola quando um misterioso vilão, determinado a dominar o mundo, começa a causar caos nas diversas realidades da televisão. Os heróis, famosos por suas séries e programas de sucesso, são convocados para formar uma equipe improvável e proteger a ordem do multiverso.'
+      },
+      {
+        id: 3,
+        nome: 'O Homem-Aranha Venom voltou',
+        img: '/assets/img/homem-aranha.jpg',
+        preco: 15,
+        quantidade: 0,
+        descricao: 'Em "Homem-Aranha: Venom Voltou", somos lançados em uma trama repleta de tensão e reviravoltas, quando o arqui-inimigo do Homem-Aranha, Venom, retorna para aterrorizar Nova York. Nessa história em quadrinhos emocionante, Peter Parker enfrenta um dos desafios mais pessoais e perigosos de sua carreira como herói. Quando Eddie Brock, o hospedeiro original do simbionte alienígena conhecido como Venom, escapa de sua prisão e se reúne com a criatura, uma nova onda de crimes e violência assola a cidade. Agora, o Homem-Aranha precisa lidar com a ameaça dupla de Venom e Eddie, ambos sedentos por vingança contra o herói.'
+      },
+      {
+        id: 4,
+        nome: 'O Homem de Ferro',
+        img: '/assets/img/homem-de-ferro.jpg',
+        preco: 5,
+        quantidade: 0,
+        descricao: '"Homem de Ferro: A Armadura da Justiça" nos apresenta ao brilhante inventor e magnata Tony Stark, que se torna o lendário super-herói conhecido como Homem de Ferro. Nessa história em quadrinhos eletrizante, somos transportados para o mundo da alta tecnologia e heroísmo, onde Tony Stark enfrenta ameaças tanto no campo de batalha quanto em sua vida pessoal. Após sofrer um grave acidente e ser mantido em cativeiro, Tony Stark constrói uma poderosa armadura de alta tecnologia que não só o mantém vivo, mas também lhe concede habilidades sobre-humanas. Assumindo a identidade do Homem de Ferro, ele decide utilizar sua invenção para combater o crime e proteger o mundo.'
+      },
+      {
+        id: 5,
+        nome: 'O Invensível Homem de Ferro',
+        img: '/assets/img/iron-man.jpg',
+        preco: 17,
+        quantidade: 0,
+        descricao: '"O Invencível Homem de Ferro: Herói Além do Aço" nos leva a uma jornada fascinante pelo mundo de Tony Stark, o gênio, bilionário e filantropo que se transforma no lendário Homem de Ferro. Nessa história em quadrinhos envolvente, testemunhamos o aprimoramento das habilidades de Tony e seu compromisso contínuo em proteger o mundo. A narrativa começa quando uma nova ameaça tecnológica surge, colocando em risco a segurança global. Tony Stark, usando sua inteligência brilhante e aprimorando sua armadura, enfrenta desafios cada vez mais perigosos. Ele precisa superar seus próprios limites para proteger a humanidade contra adversários poderosos.'
+      },
+      {
+        id: 6,
+        nome: 'O Incrível Hulk',
+        img: '/assets/img/o-incrivel-hulk.jpg',
+        preco: 12,
+        quantidade: 0,
+        descricao: '"O Incrível Hulk" nos leva a uma montanha-russa emocional através da vida do Dr. Bruce Banner e sua alter ego monstruosa, o Hulk. Nessa história em quadrinhos poderosa, testemunhamos a luta de Bruce para controlar sua raiva e lidar com as consequências de sua transformação incontrolável. A trama se desenrola enquanto Bruce Banner, um cientista brilhante atormentado por um acidente de laboratório, se vê transformado em uma criatura verde e poderosa sempre que perde o controle emocional. A busca por uma cura para sua condição se entrelaça com sua batalha interna para manter sua humanidade enquanto enfrenta a rejeição e o medo da sociedade.'
+      },
+      {
+        id: 7,
+        nome: 'Torneio de Campeões',
+        img: '/assets/img/torneio-de-campeoes.jpg',
+        preco: 13,
+        quantidade: 0,
+        descricao: 'Em "Torneio de Campeões: A Batalha Definitiva", mergulhamos em um épico confronto entre os maiores heróis e vilões do universo. Nessa eletrizante história em quadrinhos, testemunhamos a reunião dos personagens mais icônicos e poderosos, que se enfrentam em um torneio de proporções colossais. Os campeões, convocados de diferentes realidades e dimensões, são reunidos por uma entidade cósmica misteriosa. Cada lutador é desafiado a provar sua força, habilidade e determinação em combates um-a-um, com o destino do multiverso em jogo.'
+      },
+      {
+        id: 8,
+        nome: 'Wolwerine',
+        img: '/assets/img/wolwerine.jpg',
+        preco: 8,
+        quantidade: 0,
+        descricao: '"Wolverine" nos apresenta ao feroz e enigmático herói mutante conhecido como Wolverine. Nessa história em quadrinhos envolvente, adentramos o sombrio mundo de Logan, um homem com um passado misterioso e um presente repleto de violência. A narrativa se desenrola enquanto acompanhamos Wolverine em uma busca implacável por respostas sobre sua própria origem. Através de memórias fragmentadas e pistas enigmáticas, ele desvenda segredos sobre seu passado traumático e sua conexão com o sinistro Programa Arma X.'
+      },
+      {
+        id: 9,
+        nome: 'X-men',
+        img: '/assets/img/xmen.jpg',
+        preco: 10,
+        quantidade: 0,
+        descricao: '"X-Men" nos transporta para o mundo dos mutantes, onde os heróis se unem para proteger uma sociedade que os teme e os rejeita. Nessa história em quadrinhos repleta de ação e intriga, testemunhamos a luta dos X-Men, uma equipe de mutantes poderosos, para defender a coexistência pacífica entre humanos e mutantes. Liderados pelo sábio Professor Charles Xavier, os X-Men enfrentam desafios perigosos, desde a ameaça dos temíveis Sentinelas até a tirania de vilões como Magneto e a Irmandade dos Mutantes. Cada membro da equipe traz consigo habilidades extraordinárias e personalidades únicas, formando um grupo diversificado de heróis determinados a fazer a diferença.'
+      },
+      {
+        id: 10,
+        nome: 'Spider-Man',
+        img: '/assets/img/spider-man.jpg',
+        preco: 11,
+        quantidade: 0,
+        descricao: '"Spider-Man" mergulha nos aspectos emocionais da vida de Peter Parker, mostrando seus relacionamentos com seus entes queridos, como sua tia May e sua amada Mary Jane. Além disso, a história aborda temas universais como responsabilidade, redenção e a importância de usar nossos dons para fazer o bem. Com suas cenas de ação eletrizantes, diálogos cativantes e uma pitada de humor característica do Homem-Aranha, "Spider-Man: A Teia do Destino" é uma história em quadrinhos que nos leva a um mundo de aventuras, mostrando-nos que qualquer um pode ser um herói, desde que tenha coragem e determinação.'
+      },
+      {
+        id: 11,
+        nome: 'Thor Love and <br>Thunder',
+        img: '/assets/img/thor.jpg',
+        preco: 12,
+        quantidade: 0,
+        descricao: 'Descrição: "Thor: Love and Thunder" é uma história em quadrinhos que mergulha nas aventuras do poderoso deus do trovão, Thor. Nessa empolgante narrativa, testemunhamos Thor enfrentando desafios épicos e descobrindo o verdadeiro significado de ser um herói. A trama se desenrola após os eventos de uma grande batalha que abalou o universo. Thor, agora no comando de Asgard, enfrenta uma nova ameaça que coloca em risco a paz que ele lutou para conquistar. Ao lado de seus aliados leais, como a poderosa Valquíria e o astuto Loki, Thor embarca em uma jornada emocionante para enfrentar inimigos formidáveis e proteger seu reino.'
+      }
+    ]
+    var links = document.getElementsByTagName('a')
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function () {
+        let key = this.getAttribute('key')
+        let produto = items[key]
+        let produtoObj = {
+          id: produto.id,
+          nome: produto.nome,
+          quantidade: produto.quantidade,
+          preco: produto.preco,
+          img: produto.img,
+          descricao: produto.descricao
+        }
+        localStorage.setItem('produto', JSON.stringify(produtoObj))
+      })
+    }
+  </script>
+  <script src="./assets/js/quantidade.js"></script>
 </body>
+
 </html>
