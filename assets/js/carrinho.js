@@ -115,7 +115,6 @@ verificarCep = () => {
             title: 'Erro',
             text: 'Formato do cep inválido',
         })
-
         document.getElementById('input-cep').value = ''
     }
     localStorage.setItem('cep', cep)

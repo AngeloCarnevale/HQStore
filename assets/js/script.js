@@ -95,7 +95,7 @@ const items = [
     },
     {
         id: 11,
-        nome: 'Thor Love and <br>Thunder',
+        nome: 'Thor Love and Thunder',
         img: '/assets/img/thor.jpg',
         preco: 12,
         quantidade: 0,
