@@ -373,6 +373,9 @@ iframe {
     padding: 20px;
     text-align: justify;
 }
+#textoCep{
+    text-align: center;
+}
 @media (min-width: 320px) and (max-width:480px) {
 
     .footer-container {
@@ -471,6 +474,9 @@ iframe {
     }
     .links-footer {
         padding: 0;
+    }
+    .footer-text {
+        font-size: 0.9em;
     }
     .container-contact-us {
         display: flex;

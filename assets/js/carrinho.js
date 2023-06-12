@@ -69,9 +69,57 @@ paginaCarrinho = () => {
     }
     if (produtos.length != 0) {
         carrinho.innerHTML += `
+        
         <b class="total">Valor total: `+ soma + `</b>
+        
+        <div id="cep">
+            <p id="textoCep">Verificar disponibilidade de envio para sua região<p>
+            <input id="input-cep" type="text" placeholder="Digite seu cep">
+            <input type="submit" onclick="verificarCep()" id="btn-cep" value="Verificar">
+        </div>
         `
     }
 }
 
+verificarCep = () => {
+    let cep = document.getElementById('input-cep').value
+    
+    if(cep.length == 8 && isFinite(cep)){
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    .then(response => response.json())
+    .then(data => {
+        
+            if (JSON.stringify(data) == '{"erro":true}'){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Infelizmente não encontramos seu cep',
+                  })
+                document.getElementById('input-cep').value = ''
+            }
+            else {
+                console.log(data)
+                Swal.fire(
+                    'CEP Válido',
+                    'Verificação bem sucesida',
+                    'success'
+                  )
+
+                document.getElementById('input-cep').value = ''
+                
+            }
+            
+    })
+}
+    else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Erro',
+            text: 'Formato do cep inválido',
+            })
+
+        document.getElementById('input-cep').value = ''
+    }
+        
+}
 paginaCarrinho()
