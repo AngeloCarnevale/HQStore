@@ -1,9 +1,12 @@
+/* Verificando se o carrinho já existe */
+
 lista = new Array
 var carrinho = JSON.parse(localStorage.getItem('carrinho'))
 if (carrinho == null) {
     localStorage.setItem('carrinho', JSON.stringify(lista))
 }
 
+/* Array de produtos */
 const items = [
     {
         id: 0,

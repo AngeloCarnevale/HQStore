@@ -3,6 +3,8 @@ var produtos = JSON.parse(localStorage.getItem('carrinho'))
 var botao = document.getElementById('div-botao')
 var carrinho = document.getElementById('produtos-carrinho')
 
+/* Limpa o carrinho de compras */
+
 finalizarCompra = () => {
     Swal.fire({
         title: 'Deseja mesmo finalizar a compra?',
@@ -81,6 +83,7 @@ paginaCarrinho = () => {
     }
 }
 
+/* Verificar se o CEP digitado é válido */
 verificarCep = () => {
 
     let cep = document.getElementById('input-cep').value
