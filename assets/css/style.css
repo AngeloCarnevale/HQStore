@@ -68,11 +68,11 @@ main {
 
 .nav-link {
     color: var(--black);
+    border-radius: 10px;
 }
 
 .nav-link:hover {
     background-color: var(--yellow);
-    border-radius: 10px;
     color: var(--black);
     transition: linear 0.3s;
 }
