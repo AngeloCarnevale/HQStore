@@ -54,10 +54,6 @@ main {
     min-height: 80px;
 }
 
-.nav-link {
-    display: flex;
-}
-
 .row {
     margin-top: 40px;
 }
@@ -68,6 +64,7 @@ main {
 
 .nav-link {
     color: var(--black);
+    display:flex;
     border-radius: 10px;
 }
 
@@ -535,13 +532,13 @@ iframe {
         flex-direction: column;
         background-color: white;
     }
-    .nav-link:hover{
+    .nav-link{
         display:inline-block;
     }
 }
 
 @media (min-width: 481px) and (max-width:768px) {
-    .nav-link:hover{
+    .nav-link{
         display:inline-block;
     }
     .footer-container {
