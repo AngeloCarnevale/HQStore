@@ -534,12 +534,14 @@ iframe {
     }
     .nav-link{
         display:inline-block;
+        padding:5px
     }
 }
 
 @media (min-width: 481px) and (max-width:768px) {
     .nav-link{
         display:inline-block;
+        padding:5px;
     }
     .footer-container {
         flex-direction: column;
