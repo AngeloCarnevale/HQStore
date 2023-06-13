@@ -536,13 +536,13 @@ iframe {
         background-color: white;
     }
     .nav-link:hover{
-        background-color:none;
+        background-color: white;
     }
 }
 
 @media (min-width: 481px) and (max-width:768px) {
     .nav-link:hover{
-        background-color:none;
+        background-color:white;
     }
     .footer-container {
         flex-direction: column;
