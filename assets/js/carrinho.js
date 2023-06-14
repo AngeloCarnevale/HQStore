@@ -14,11 +14,20 @@ finalizarCompra = () => {
     }).then((result) => {
         if (result.isConfirmed) {
             localStorage.clear()
-            Swal.fire(
-                'Compra finalizada!',
-                'Obrigad@ por comprar conosco',
-                'success'
-            )
+            Swal.fire({
+                title: 'Compra finalizada!',
+                text: 'Obrigad@ por comprar conosco',
+                icon: 'success',
+                isConfirmed: false,
+                confirmButtonText: 'OK'
+                }
+            ).then((result) => {
+                if (result.isConfirmed) {
+                    location.reload()
+                    return false
+                }
+                
+            })
         }
     })
 
@@ -35,8 +44,15 @@ else {
     `
 }
 
-/* Removendo um item do carrinho */
+/* Removendo um item do carrinho 
 
+@example
+    removerProduto(id); -> false
+
+@param {Number} obrigatório Parâmetro obrigatótio
+@returns {Boolean}
+
+*/
 removerProduto = (id) => {
     let newArray = produtos.filter((item) => item.id !== id);
     console.log(newArray)
@@ -58,10 +74,8 @@ paginaCarrinho = () => {
             <p class="preco-carrinho">Preço: R$`+ valorTotal + `,00</p>
             <p class="quantidade">Quantidade: `+ val.quantidade + `</p>
         </div>
-        
     <a class="btn-remove-cart" onclick="removerProduto(`+ val.id + `)" href="#"><img class="lixeira-img" src="../assets/img/lixeira.png"></a>
     </div>
-
     `
         total.push(valorTotal)
     })
