@@ -1,18 +1,18 @@
-var desc_produto = document.getElementById('infos-produto')
-var link = document.getElementsByTagName('a')
-var lista = new Array
-var carrinho = JSON.parse(localStorage.getItem('carrinho'))
-var produtoUnico = JSON.parse(localStorage.getItem('produto'))
+let desc_produto = document.getElementById('infos-produto')
+let link = document.getElementsByTagName('a')
+let lista = new Array
+let carrinho = JSON.parse(localStorage.getItem('carrinho'))
+let produtoUnico = JSON.parse(localStorage.getItem('produto'))
 
 
 if (carrinho == null) {
     localStorage.setItem('carrinho', JSON.stringify(lista))
 }
-console.log()
 
+/* Exibir informações de um produto específico em uma página separada */
 exibirProduto = () => {
 
-    var produto = JSON.parse(localStorage.getItem('produto'))
+    let produto = JSON.parse(localStorage.getItem('produto'))
 
     desc_produto.innerHTML += `
     
@@ -29,14 +29,13 @@ exibirProduto = () => {
         </div>
         `
 }
-
 exibirProduto()
 
 /* Função para validar e adicionar um item no carrinho */
 
 atualizarCarrinho = (id, nome, preco, img) => {
-    var ids = []
-    for (var i = 0; i < carrinho.length; i++) {
+    let ids = []
+    for (let i = 0; i < carrinho.length; i++) {
         ids.push(carrinho[i].id)
     }
     let produto = {
@@ -52,7 +51,7 @@ atualizarCarrinho = (id, nome, preco, img) => {
     }
     else {
         if (ids.includes(id)) {
-            for (var i = 0; i < carrinho.length; i++) {
+            for (let i = 0; i < carrinho.length; i++) {
                 if (carrinho[i].id == id) {
                     carrinho[i].quantidade++
                 }

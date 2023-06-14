@@ -1,7 +1,7 @@
 /* Verificando se o carrinho já existe */
 
-lista = new Array
-var carrinho = JSON.parse(localStorage.getItem('carrinho'))
+let lista = new Array
+let carrinho = JSON.parse(localStorage.getItem('carrinho'))
 if (carrinho == null) {
     localStorage.setItem('carrinho', JSON.stringify(lista))
 }
@@ -50,7 +50,7 @@ const items = [
     },
     {
         id: 5,
-        nome: 'O Invensível Homem de Ferro',
+        nome: 'O Invencível Homem de Ferro',
         img: '/assets/img/iron-man.jpg',
         preco: 17,
         quantidade: 0,
@@ -106,7 +106,7 @@ const items = [
     }
 ]
 
-var containerProdutos = document.getElementById('productsList')
+let containerProdutos = document.getElementById('productsList')
 
 /* Carregar produtos da página */
 
@@ -125,11 +125,11 @@ productsPage = () => {
 
 productsPage()
 
-var links = document.getElementsByTagName('a')
+let links = document.getElementsByTagName('a')
 
 /* Pegando evento de click */
 
-for (var i = 0; i < links.length; i++) {
+for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function () {
         let key = this.getAttribute('key')
         let produto = items[key]

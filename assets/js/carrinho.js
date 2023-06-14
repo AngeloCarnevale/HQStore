@@ -1,7 +1,7 @@
-var total = []
-var produtos = JSON.parse(localStorage.getItem('carrinho'))
-var botao = document.getElementById('div-botao')
-var carrinho = document.getElementById('produtos-carrinho')
+let total = []
+let produtos = JSON.parse(localStorage.getItem('carrinho'))
+let botao = document.getElementById('div-botao')
+let carrinho = document.getElementById('produtos-carrinho')
 
 /* Limpa o carrinho de compras */
 
@@ -32,6 +32,7 @@ finalizarCompra = () => {
     })
 
 }
+/* Validar se existe produto no carrinho */
 
 if (produtos == null || produtos == '') {
     botao.innerHTML += `
@@ -44,7 +45,8 @@ else {
     `
 }
 
-/* Removendo um item do carrinho 
+/* 
+##### Removendo um item do carrinho #####
 
 @example
     removerProduto(id); -> false
@@ -80,7 +82,7 @@ paginaCarrinho = () => {
         total.push(valorTotal)
     })
     var soma = 0
-    for (var i = 0; i < total.length; i++) {
+    for (let i = 0; i < total.length; i++) {
         soma += total[i]
     }
     if (produtos.length != 0) {
