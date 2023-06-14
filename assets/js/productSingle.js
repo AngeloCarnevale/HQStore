@@ -17,7 +17,7 @@ exibirProduto = () => {
     desc_produto.innerHTML += `
     
         <div class="info-produto">
-            <img src="`+ produto.img + `"/>
+            <img src="`+ produto.img + `" alt="Imagem do produto"/>
             <div class="nome-preco">
                 <h2 class="nome-produto" >`+ produto.nome + `</h2>
                 <hr>

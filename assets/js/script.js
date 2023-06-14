@@ -115,7 +115,7 @@ productsPage = () => {
         containerProdutos.innerHTML += `
         
         <div class="produto">
-            <a class="productImage" key='`+ val.id + `' href="/views/product.html"><img src='` + val.img + `'/></a>
+            <a class="productImage" key='`+ val.id + `' href="/views/product.html"><img src='` + val.img + `' alt="Imagem do produto"/></a>
             <a class="textoProduto" key='`+ val.id + `' href="/views/product.html">` + val.nome + `<p class="preco">R$` + val.preco + `,00</p></a>
         </div>
         `
